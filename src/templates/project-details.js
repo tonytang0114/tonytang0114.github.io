@@ -18,6 +18,7 @@ const ProjectDetails = ({ data }) => {
   const { html } = data.markdownRemark
   const { title, stack, slug } = data.markdownRemark.frontmatter
   let images = data.tipsme.edges;
+  images.shift();
   // images = null;
 
   // if (slug == "tipsme") {
@@ -26,16 +27,14 @@ const ProjectDetails = ({ data }) => {
   // if (slug == "algoTrade") {
   //   images = data.tipsme.edges;
   // }
-
-  if (slug === "tipsme") {
-    images.shift();
+  if (slug === "cashflow") {
+    images = data.cashflow.edges;
   }
   if (slug === "algoTrade") {
     images = data.algoTrade.edges;
   }
-  else {
-    images = data.cashflow.edges;
-  }
+
+
 
   return (
 
