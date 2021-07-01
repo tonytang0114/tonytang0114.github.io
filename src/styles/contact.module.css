@@ -1,0 +1,66 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    /* margin-top: 100px; */
+    align-items:flex-start;
+    height: 100vh;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.outer_contact{
+    
+    background: radial-gradient(ellipse at bottom, #1B2419, #162F59);
+    background-repeat: no-repeat;
+}
+
+.contact_form h1 {
+    margin-bottom: 20px;
+}
+
+.contact_form {
+    border-radius: 5px;
+    background: radial-gradient(ellipse at bottom, #399793, #244891);
+    background-repeat: no-repeat;
+    padding: 30px;
+    /* height: 500px; */
+}
+
+input[type=text], [type=email], select, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: black;
+}
+
+input[type=submit] {
+    /* background: radial-gradient(#40B79E, #3278A8); */
+    margin-top: 20px;
+    background-color: #40B79E;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #172D4B;
+}
+
+@media only screen and (max-width: 700px){
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 80px;
+        margin: 80px 20px;
+        padding: 20px;
+        height: 900px;
+    }
+}
